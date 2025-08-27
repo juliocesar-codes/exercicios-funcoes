@@ -6,15 +6,24 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Atividade 1</title>
     <link rel="stylesheet" href="style.css">
+    <script src="funcoes.js"></script>
 </head>
 
 <body>
-    <a href="index.html">Atividade 1</a>
-    <a href="atividade3.html">Atividade 3</a>
-    <a href="atividade4.html">Atividade 4</a>
-
+    <header>
+        <a href="index.html">Atividade 1</a>
+        <a href="atividade3.html">Atividade 3</a>
+        <a href="atividade4.html">Atividade 4</a>
+    </header>
     <main>
+        <h1>Produtos JS</h1>
+        <input placeholder="Digite o nome do produto" id="produto" type="text">
+        <input placeholder="Digite a quantia" id="quantia" type="text">
+        <input placeholder="Digite o preço" id="preco" type="text">
 
+        <button onclick="calcularTotal()" id="calcularDesconto">Calcular Desconto</button>
+
+        <p id="mensagem"></p>
     </main>
 </body>
 
