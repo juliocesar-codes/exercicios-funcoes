@@ -11,4 +11,5 @@ body {
 main {
     display: grid;
     place-content: center;
+    height: 80vh;
 }

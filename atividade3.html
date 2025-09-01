@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Atividade 1</title>
     <link rel="stylesheet" href="style.css">
+    <script src="funcoes.js"></script>
 </head>
 
 <body>
@@ -14,7 +15,19 @@
     <a href="atividade4.html">Atividade 4</a>
 
     <main>
+        <h1>Escola APRENDER</h1>
+        <p>Escolha seu nível de professor:</p>
+        <select name="" id="selecao">
+            <option id="nivel1" value="12">Professor Nível 1</option>
+            <option id="nivel2" value="17">Professor Nível 2</option>
+            <option id="nivel3" value="25">Professor Nível 3</option>
+        </select>
 
+        <input id="quantiaAulas" placeholder="Digite a quantia de aulas por semana" type="text">
+
+        <button onclick="calcularAulas()">Calcular</button>
+
+        <p id="salario"></p>
     </main>
 </body>
 
