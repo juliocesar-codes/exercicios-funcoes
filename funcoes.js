@@ -97,6 +97,14 @@ function calcularAulas(){
         let totalSalario = quantia * nivel3
         document.getElementById('salario').textContent = `Salário: R$${totalSalario}`
     }else{}
+}
 
-    
+// ATIVIDADE 4
+
+function calcularImc(){
+    let peso = parseInt(document.getElementById('peso').value)
+    let altura = parseInt(document.getElementById('altura').value)
+    let imc = peso / (altura ** 2)
+
+    console.log(imc)
 }

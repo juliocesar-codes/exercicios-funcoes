@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Atividade 1</title>
     <link rel="stylesheet" href="style.css">
+    <script src="funcoes.js"></script>
 </head>
 
 <body>
@@ -14,7 +15,11 @@
     <a href="atividade3.html">Atividade 3</a>
 
     <main>
-
+        <h1>Calculadora IMC</h1>
+        <input type="text" placeholder="Digite seu peso" id="peso">
+        <input type="text" placeholder="Digite sua altura" id="altura">
+        <button onclick="calcularImc()">Calcular</button>
+        <p id="imcResultado"></p>
     </main>
 </body>
 
