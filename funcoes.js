@@ -103,8 +103,26 @@ function calcularAulas(){
 
 function calcularImc(){
     let peso = parseInt(document.getElementById('peso').value)
-    let altura = parseInt(document.getElementById('altura').value)
-    let imc = peso / (altura ** 2)
+    let altura = parseFloat(document.getElementById('altura').value)
 
-    console.log(imc)
+    let imc = (peso / altura ** 2).toFixed(2)
+
+    
+    if(imc < 16.9){
+        document.getElementById('classificacao').textContent = `sua classificação é muito abaixo do peso`
+    }else if(imc >= 17 && imc <= 18.4 ){
+        document.getElementById('classificacao').textContent = `sua classificação é abaixo do peso`
+    }else if(imc >= 18.5 && imc <= 24.9){
+        document.getElementById('classificacao').textContent = `sua classificação é peso normal`
+    }else if(imc >= 25 && imc <= 29.9){
+        document.getElementById('classificacao').textContent = `sua classificação é acima do peso`
+    }else if(imc >= 30 && imc <= 34.9){
+        document.getElementById('classificacao').textContent = `sua classificação é Obesidade grau 1`
+    }else if(imc >= 35 && imc <= 40){
+        document.getElementById('classificacao').textContent = `sua classificação é Obesidade grau 2`
+    }else if(imc > 40){
+        document.getElementById('classificacao').textContent = `sua classificação é Obesidade grau 3`
+    }else{}
+
+    document.getElementById('imcResultado').textContent = `Seu IMC é: ${imc}`
 }
